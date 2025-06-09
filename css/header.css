@@ -2,6 +2,16 @@
   height: 100vh;
   position: relative;
   max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .header-title {
@@ -33,9 +43,8 @@
   height: 1em;
 }
 
-
-.header-content {
-  width: 100%;
+.header-left {
+  width: 90%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -55,13 +64,13 @@
   background-color: black;
   opacity: 0.25;
 }
+
 .header-social-media {
-  position: absolute;
-  right: 40px;
-  top: 30%;
+  width: 10%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 200px;
 }
 
 .header-social-button {
@@ -75,7 +84,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
 }
+
 .header-social-button::before {
   content: '';
   position: absolute;
@@ -100,6 +111,7 @@
   position: relative;
   z-index: 1;
 }
+
 .header-social-icon {
   z-index: 2;
   width: 30px;
@@ -113,7 +125,7 @@
   .header-title {
     font-size: 48px;
   }
-  .header-content {
+  .header-left {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -123,10 +135,22 @@
   }
 }
 
-/* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   #header {
+    flex-direction: column;
+    align-items: center;
     height: 80vh;
+  }
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .header-social-media {
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    margin-top: 100px;
   }
   .header-social-icon {
     width: 20px;
@@ -135,9 +159,10 @@
     font-size: 38px;
     padding-right: 10px;
   }
-  .header-content {
+  .header-left {
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
   }
   .banner-skills {
     padding: 1px 4px;
@@ -152,7 +177,7 @@
 
 /* Extra small devices (very small phones, less than 480px) */
 @media (max-width: 480px) {
-  .header-content {
+  .header-left {
     justify-content: start;
     padding-top: 130px;
   }

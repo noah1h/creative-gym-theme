@@ -72,6 +72,9 @@
   border-radius: 100px;
   transition: all 0.3s ease;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-social-button::before {
   content: '';
@@ -124,6 +127,9 @@
 @media (max-width: 767px) {
   #header {
     height: 80vh;
+  }
+  .header-social-icon {
+    width: 20px;
   }
   .header-title {
     font-size: 38px;

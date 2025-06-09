@@ -1,0 +1,29 @@
+:root {
+  --primary-color: #007ea7;
+  --secondary-color: #00a7e1;
+  --accent-color: #003459;
+  --background-color: #0B1215;
+  --text-color: #fbfbff;
+  --border-color: #334155;
+}
+
+
+h1 {
+  font-family: 'Inter', sans-serif;
+}
+p {
+  font-family: 'Asul', sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  max-width: 100%;
+}
+html a {
+  text-decoration: none;
+}

@@ -1,3 +1,4 @@
+
 #nav {
   position: fixed;
   top: 0;
@@ -7,22 +8,32 @@
   height: 70px;
   background-color: var(--background-color);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 11px;
+  padding: 0 1rem;
 }
+
 .gym-logo {
   color: var(--text-color);
   font-size: 30px;
   font-weight: 800;
 }
+
 .logo-2 {
   color: var(--secondary-color);
 }
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
 .nav-links {
   margin-right: 45px;
   color: var(--text-color);
   position: relative;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
+
 .nav-links::after {
   content: '';
   position: absolute;
@@ -43,10 +54,10 @@
 .nav-links:hover::after {
   width: 100%;
 }
+
 .nav-button {
   margin-right: 20px;
-  width: fit-content;
-  font-size: var(--button-1);
+  font-size: 1rem;
   padding: 8px 20px;
   font-weight: 700;
   background-color: var(--primary-color);
@@ -55,6 +66,7 @@
   border-radius: 100px;
   transition: all 0.3s ease;
 }
+
 .nav-button:hover {
   transform: translateY(-2px);
   background-color: transparent;
@@ -62,49 +74,34 @@
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
 }
 
-
-
 .hamburger-menu {
   fill: white;
   height: 40px;
+  width: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
 }
+
 .sidebar {
   position: fixed;
-  top: -100%;
   right: 0;
   left: 0;
-  height: 500px;
-  z-index: 9000;
-  background-color: black;
+  top: 70px;
+  background-color: var(--background-color);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.8s ease;
+  display: none;
+  z-index: 999;
 }
 
-.open {
-  top: 0;
-}
-
-.x-svg {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  fill: var(--text-color);
-  height: 35px;
-}
-
-.sidebar-gym-logo {
-  color: var(--text-color);
-  font-size: 30px;
-  font-weight: 500;
-  padding: 20px;
-}
 .sidebar-links {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0;
 }
-.sidebar-link {
+
+.sidebar-link, .sidebar-button {
   color: var(--background-color);
   background-color: var(--text-color);
   border: var(--background-color) 1px solid;
@@ -113,8 +110,12 @@
   padding: 20px;
   position: relative;
   transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
 }
-.sidebar-link::after {
+
+.sidebar-link::after, .sidebar-button::after {
   content: '';
   position: absolute;
   width: 0;
@@ -125,39 +126,22 @@
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
-.sidebar-link:hover {
+
+.sidebar-link:hover, .sidebar-button:hover {
   transform: translateY(-2px);
 }
 
-.sidebar-link:hover::after {
+.sidebar-link:hover::after, .sidebar-button:hover::after {
   width: 100%;
 }
+
 .sidebar-button {
-  color: var(--text-color);
   background-color: var(--secondary-color);
-  border: var(--background-color) 1px solid;
-  width: 90%;
-  margin-top: 20px;
-  padding: 20px;
-  position: relative;
-  transition: all 0.3s ease;
-}
-.sidebar-button::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 50%;
-  background-color: var(--secondary-color);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-.sidebar-button:hover {
-  transform: translateY(-2px);
-  color: var(--text-color);
 }
 
-.sidebar-button:hover::after {
-  width: 100%;
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* Ensures full height alignment */
 }

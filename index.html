@@ -27,13 +27,10 @@
   <link rel="stylesheet" href="css/about.css">
 
   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="sidebar d-lg-none d-md-block">
-    <div class="sidebar-gym-logo">Max<span class="logo-2">Fit</span></div>
-    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x-lg x-svg" viewBox="0 0 16 16">
-      <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-    </svg>
     <div class="sidebar-links">
       <a class="sidebar-link">About us</a>
       <a class="sidebar-link">Our trainers</a>
@@ -45,26 +42,25 @@
 
 
 
+  
   <nav id="nav">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-sm-2">
-          <div class="gym-logo ps-3">Max<span class="logo-2">Fit</span></div>
-        </div>
-        <div class="col-lg-6 col-sm-10 d-flex justify-content-end align-items-center">
-          <div class="nav-links-container d-none d-lg-block">
-          <a class="nav-links" href="">About us</a>
-          <a class="nav-links" href="">Our trainers</a>
-          <a class="nav-links" href="">Timetable</a>
-          <button class="nav-button">Join now</button>
-        </div>
-        <svg class="hamburger-menu d-lg-none d-md-block me-3" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-        </svg>
-        </div>
+    <div class="container-fluid nav-container">
+      <div class="gym-logo">Max<span class="logo-2">Fit</span></div>
+  
+      <div class="nav-links-container d-none d-lg-flex">
+        <a class="nav-links" href="#">About us</a>
+        <a class="nav-links" href="#">Our trainers</a>
+        <a class="nav-links" href="#">Timetable</a>
+        <button class="nav-button">Join now</button>
       </div>
+  
+      <svg class="hamburger-menu d-lg-none bi bi-list" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
     </div>
   </nav>
+  
+  
   
   <header id="header">
     <div class="header-overlay"></div>
@@ -105,13 +101,11 @@
           </div>
           <div class="col-lg-7 col-md-12 pt-5 px-5">
             <p class="about-desc">At <span class="logo-text">Max<span class="logo-2">Fit</span></span>, we believe that fitness isn’t just about lifting weights or running on treadmills—it’s about creating a healthier, happier, and stronger you. Our mission is to empower our community through personalized fitness programs, expert coaching, and a supportive environment where everyone can thrive, no matter their starting point.
-              <br>
-              <br>
-              We’ve designed our facility to cater to all levels, from beginners taking their first steps towards a healthier lifestyle to seasoned athletes striving for peak performance. Our team of certified trainers is dedicated to helping you achieve your goals, whether that’s shedding a few pounds, building lean muscle, or simply feeling more energized and confident.
           </p>
-            <div class="row pt-5 g-3">
+            <div class="row pt-5 g-5">
               <div class="col-lg-6 col-md-12">
                 <div class="about-card px-3">
+                  
                   <div class="about-card-title">More Than a Gym</div>
                   <p class="about-card-text">At <span class="logo-text">Max<span class="logo-2">Fit</span></span>, you’re not just a member—you’re part of a supportive family. We’re here to lift each other up, every step of the way.</p>
                 </div>
@@ -140,6 +134,7 @@
       </div>
     
   </section>
+  
   <script src="js/sidebar.js"></script>
   <script src="js/skills.js"></script>
 </body>

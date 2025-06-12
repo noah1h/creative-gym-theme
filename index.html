@@ -1,141 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MaxFit</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxFit</title>
 
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--End-->
 
-<!--Bootstrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!--End-->
-
-  <!--Css files-->
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/about.css">
-
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
-<body>
-  <div class="sidebar d-lg-none d-md-block">
-    <div class="sidebar-links">
-      <a class="sidebar-link">About us</a>
-      <a class="sidebar-link">Our trainers</a>
-      <a class="sidebar-link">Timetable</a>
-      <a class="sidebar-button">Join now</a>
-    </div>
-  </div>
-
-
-
-
-  
-  <nav id="nav">
-    <div class="container-fluid nav-container">
-      <div class="gym-logo">Max<span class="logo-2">Fit</span></div>
-  
-      <div class="nav-links-container d-none d-lg-flex">
-        <a class="nav-links" href="#">About us</a>
-        <a class="nav-links" href="#">Our trainers</a>
-        <a class="nav-links" href="#">Timetable</a>
-        <button class="nav-button">Join now</button>
+    <!--Css files-->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/trainers.css" />
+    <link rel="stylesheet" href="css/timetable.css" />
+  </head>
+  <body>
+    <div class="sidebar d-lg-none d-md-block">
+      <div class="sidebar-links">
+        <a class="sidebar-link">About us</a>
+        <a class="sidebar-link">Our trainers</a>
+        <a class="sidebar-link">Timetable</a>
+        <a class="sidebar-button">Join now</a>
       </div>
-  
-      <svg class="hamburger-menu d-lg-none bi bi-list" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-      </svg>
     </div>
-  </nav>
-  
-  
-  
-  <header id="header">
-    <div class="header-overlay"></div>
-    <div class="header-container">
-    <div class="header-left">
-    <h1 class="header-title">Achieve Your Best Self. <br> We Specialize In:
-      <br>
-      <span class="banner-skills"> 
-      </span>
-    </h1>
-  </div>
-  <div class="header-social-media">
-    <button class="header-social-button">
-      <svg class="header-social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-      </svg>
-    </button>
-    <button class="header-social-button">
-      <svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-      </svg>
-    </button>
-    <button class="header-social-button">
-      <svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-      </svg>
-    </button>
-  </div>
-</div>
-  </header>
 
-  <section id="about">
-    <div class="about-title">Elevate Your Workout Experience</div>
+    <nav id="nav">
+      <div class="container-fluid nav-container">
+        <div class="gym-logo">Max<span class="logo-2">Fit</span></div>
+
+        <div class="nav-links-container d-none d-lg-flex">
+          <a class="nav-links" href="#">About us</a>
+          <a class="nav-links" href="#">Our trainers</a>
+          <a class="nav-links" href="#">Timetable</a>
+          <button class="nav-button">Join now</button>
+        </div>
+
+        <svg
+          class="hamburger-menu d-lg-none bi bi-list"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <header id="header">
+      <div class="header-overlay"></div>
+      <div class="header-container">
+        <div class="header-left">
+          <h1 class="header-title">
+            Achieve Your Best Self. <br />
+            We Specialize In:
+            <br />
+            <span class="banner-skills"> </span>
+          </h1>
+        </div>
+        <div class="header-social-media">
+          <button class="header-social-button">
+            <svg
+              class="header-social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              />
+            </svg>
+          </button>
+          <button class="header-social-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="header-social-icon"
+              fill="currentColor"
+              class="bi bi-twitter-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+              />
+            </svg>
+          </button>
+          <button class="header-social-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="header-social-icon"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="about-title">Elevate Your Workout Experience</div>
       <div class="container-fluid px-3">
         <div class="row">
           <div class="col-lg-5 col-md-12 d-flex justify-content-center">
-            <img class="about-img mt-5" src="imgs/man2.png" alt="" title="Image by @Luis_molinero on Freepik">
+            <img
+              class="about-img mt-5"
+              src="imgs/man2.png"
+              alt=""
+              title="Image by @Luis_molinero on Freepik"
+            />
           </div>
           <div class="col-lg-7 col-md-12 pt-5 px-5">
-            <p class="about-desc">At <span class="logo-text">Max<span class="logo-2">Fit</span></span>, we believe that fitness isn’t just about lifting weights or running on treadmills—it’s about creating a healthier, happier, and stronger you. Our mission is to empower our community through personalized fitness programs, expert coaching, and a supportive environment where everyone can thrive, no matter their starting point.
-          </p>
+            <p class="about-desc">
+              At
+              <span class="logo-text">Max<span class="logo-2">Fit</span></span
+              >, we believe that fitness isn’t just about lifting weights or
+              running on treadmills—it’s about creating a healthier, happier,
+              and stronger you. Our mission is to empower our community through
+              personalized fitness programs, expert coaching, and a supportive
+              environment where everyone can thrive, no matter their starting
+              point.
+            </p>
             <div class="row pt-5 g-5">
               <div class="col-lg-6 col-md-12">
                 <div class="about-card px-3">
-                  
                   <div class="about-card-title">More Than a Gym</div>
-                  <p class="about-card-text">At <span class="logo-text">Max<span class="logo-2">Fit</span></span>, you’re not just a member—you’re part of a supportive family. We’re here to lift each other up, every step of the way.</p>
+                  <p class="about-card-text">
+                    At
+                    <span class="logo-text"
+                      >Max<span class="logo-2">Fit</span></span
+                    >, you’re not just a member—you’re part of a supportive
+                    family. We’re here to lift each other up, every step of the
+                    way.
+                  </p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
                 <div class="about-card px-3">
                   <div class="about-card-title">Your Goals, Our Mission</div>
-                  <p class="about-card-text">Our dedicated trainers and personalized programs are designed to help you reach your unique fitness goals—no matter where you’re starting from.</p>
+                  <p class="about-card-text">
+                    Our dedicated trainers and personalized programs are
+                    designed to help you reach your unique fitness goals—no
+                    matter where you’re starting from.
+                  </p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
                 <div class="about-card px-3">
                   <div class="about-card-title">Fun & Fitness</div>
-                  <p class="about-card-text">From dynamic classes to energizing workouts, we make fitness enjoyable and motivating, so you’ll look forward to every session.</p>
+                  <p class="about-card-text">
+                    From dynamic classes to energizing workouts, we make fitness
+                    enjoyable and motivating, so you’ll look forward to every
+                    session.
+                  </p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
                 <div class="about-card px-3">
-                  <div class="about-card-title"> Everyone’s Welcome </div>
-                  <p class="about-card-text">Whether you’re a beginner or a pro, we have the space, equipment, and community to support your journey to becoming your best self.</p>
+                  <div class="about-card-title">Everyone’s Welcome</div>
+                  <p class="about-card-text">
+                    Whether you’re a beginner or a pro, we have the space,
+                    equipment, and community to support your journey to becoming
+                    your best self.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="trainers">
+      <div class="container mt-5 d-flex justify-content-center align-items-center flex-column">
+      <h1 class="trainers-title">Our trainers:</h1>
+        <div class="row g-5 align-items-end">
+
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div class="trainer">
+              <div class="trainer-overlay">
+                <div class="trainer-name">Trainer name</div>
+                <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
+              </div>
+              <img class="trainer-img" src="https://placehold.co/250x350" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div class="trainer">
+              <div class="trainer-overlay">
+                <div class="trainer-name">Trainer name</div>
+                <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
+              </div>
+              <img class="trainer-img" src="https://placehold.co/250x350" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div class="trainer">
+              <div class="trainer-overlay">
+                <div class="trainer-name">Trainer name</div>
+                <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
+              </div>
+              <img class="trainer-img" src="https://placehold.co/250x350" alt="">
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+    </section>
     
-  </section>
-  
-  <script src="js/sidebar.js"></script>
-  <script src="js/skills.js"></script>
-</body>
+    <section id="timetable"></section>
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- GSAP (GreenSock Animation Platform) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- ScrollMagic -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+<!-- ScrollMagic GSAP plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+
+</head>
+<body>
+
+    <script src="js/scrollmagic.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/skills.js"></script>
+    
+  </body>
 </html>

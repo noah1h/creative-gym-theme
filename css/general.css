@@ -27,3 +27,6 @@ html body {
 html a {
   text-decoration: none;
 }
+section {
+  overflow: hidden;
+}

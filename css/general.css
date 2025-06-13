@@ -5,6 +5,7 @@
   --background-color: #0B1215;
   --text-color: #fbfbff;
   --border-color: #334155;
+  --desc-color: #a2a2a2;
 }
 
 
@@ -23,6 +24,7 @@ html body {
   background-color: var(--background-color);
   color: var(--text-color);
   max-width: 100%;
+  overflow-x: hidden;
 }
 html a {
   text-decoration: none;

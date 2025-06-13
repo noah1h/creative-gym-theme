@@ -29,21 +29,22 @@
       crossorigin="anonymous"
     />
     <!--End-->
-
+    <!--AOS.js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Css files-->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/trainers.css" />
-    <link rel="stylesheet" href="css/timetable.css" />
+    <link rel="stylesheet" href="css/memberships.css" />
   </head>
   <body>
     <div class="sidebar d-lg-none d-md-block">
       <div class="sidebar-links">
         <a class="sidebar-link">About us</a>
         <a class="sidebar-link">Our trainers</a>
-        <a class="sidebar-link">Timetable</a>
+        <a class="sidebar-link">Memberships</a>
         <a class="sidebar-button">Join now</a>
       </div>
     </div>
@@ -55,7 +56,7 @@
         <div class="nav-links-container d-none d-lg-flex">
           <a class="nav-links" href="#">About us</a>
           <a class="nav-links" href="#">Our trainers</a>
-          <a class="nav-links" href="#">Timetable</a>
+          <a class="nav-links" href="#">Memberships</a>
           <button class="nav-button">Join now</button>
         </div>
 
@@ -81,11 +82,11 @@
             Achieve Your Best Self. <br />
             We Specialize In:
             <br />
-            <span class="banner-skills"> </span>
+            <span class="banner-skills"></span>
           </h1>
         </div>
         <div class="header-social-media">
-          <button class="header-social-button">
+          <button data-aos="fade-left" class="header-social-button">
             <svg
               class="header-social-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +99,7 @@
               />
             </svg>
           </button>
-          <button class="header-social-button">
+          <button data-aos="fade-left" data-aos-delay="100" class="header-social-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="header-social-icon"
@@ -111,7 +112,7 @@
               />
             </svg>
           </button>
-          <button class="header-social-button">
+          <button data-aos="fade-left" data-aos-delay="200" class="header-social-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="header-social-icon"
@@ -129,11 +130,12 @@
     </header>
 
     <section id="about">
-      <div class="about-title">Elevate Your Workout Experience</div>
+      <div data-aos="fade-right" data-aos-duration="1000" class="about-title">Elevate Your Workout Experience</div>
       <div class="container-fluid px-3">
         <div class="row">
           <div class="col-lg-5 col-md-12 d-flex justify-content-center">
-            <img
+            <img data-aos="fade-right"
+            data-aos-duration="1500"
               class="about-img mt-5"
               src="imgs/man2.png"
               alt=""
@@ -141,7 +143,7 @@
             />
           </div>
           <div class="col-lg-7 col-md-12 pt-5 px-5">
-            <p class="about-desc">
+            <p data-aos="fade-left" class="about-desc">
               At
               <span class="logo-text">Max<span class="logo-2">Fit</span></span
               >, we believe that fitness isn’t just about lifting weights or
@@ -151,9 +153,9 @@
               environment where everyone can thrive, no matter their starting
               point.
             </p>
-            <div class="row pt-5 g-5">
+            <div class="row pt-3 g-3">
               <div class="col-lg-6 col-md-12">
-                <div class="about-card px-3">
+                <div data-aos="fade-up" class="about-card px-3">
                   <div class="about-card-title">More Than a Gym</div>
                   <p class="about-card-text">
                     At
@@ -166,7 +168,7 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
-                <div class="about-card px-3">
+                <div data-aos="fade-up"  data-aos-delay="100" class="about-card px-3">
                   <div class="about-card-title">Your Goals, Our Mission</div>
                   <p class="about-card-text">
                     Our dedicated trainers and personalized programs are
@@ -176,7 +178,7 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
-                <div class="about-card px-3">
+                <div data-aos="fade-up" class="about-card px-3">
                   <div class="about-card-title">Fun & Fitness</div>
                   <p class="about-card-text">
                     From dynamic classes to energizing workouts, we make fitness
@@ -186,7 +188,7 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
-                <div class="about-card px-3">
+                <div data-aos="fade-up"  data-aos-delay="100" class="about-card px-3">
                   <div class="about-card-title">Everyone’s Welcome</div>
                   <p class="about-card-text">
                     Whether you’re a beginner or a pro, we have the space,
@@ -207,7 +209,7 @@
         <div class="row g-5 align-items-end">
 
           <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div class="trainer">
+            <div data-aos="fade-up" data-aos-duration="800" class="trainer">
               <div class="trainer-overlay">
                 <div class="trainer-name">Trainer name</div>
                 <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
@@ -216,7 +218,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div class="trainer">
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" class="trainer">
               <div class="trainer-overlay">
                 <div class="trainer-name">Trainer name</div>
                 <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
@@ -225,7 +227,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div class="trainer">
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" class="trainer">
               <div class="trainer-overlay">
                 <div class="trainer-name">Trainer name</div>
                 <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
@@ -240,7 +242,61 @@
       
     </section>
     
-    <section id="timetable"></section>
+    <section id="memberships">
+      <h1 class="memberships-title">Memberships</h1>
+      <p class="memberships-desc">Whether you're just starting out or taking it to the next level, our Classic and Premium memberships give you everything you need to succeed.</p>
+
+      <div class="container pt-3">
+        <div class="row g-3">
+          <div class="col-lg-6 col-sm-12 d-flex justify-content-end">
+            <div class="membership-pro">
+              <div class="d-flex flex-row">
+              <div class="membership-card-title">PRO</div>
+              <div class="best-value-container d-flex justify-content-end align-items-center">
+              <div class="best-value-text">BEST VALUE</div>
+            </div>
+              </div>
+              <div class="starting-at-text">Starting at</div>
+              <div class="membership-price">
+                10$ <span class="membership-period">/mo.</span>
+              </div>
+              <div class="membership-details">Unlimited gym access, free group classes, one weekly guest pass, priority bookings, exclusive discounts, events and so much more!</div>
+              
+              <div class="row pt-5">
+                <div class="col-6 d-flex align-items-center">
+                  <a class="learn-more-link">Learn more</a> 
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                  
+                <button class="subscribe-button">Subscribe now</button>
+               </div> 
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 d-flex justify-content-start">
+            <div class="membership-classic">
+              <div class="membership-card-title">CLASSIC</div>
+              <div class="starting-at-text">Starting at</div>
+              <div class="classic-membership-price">
+                5$ <span class="membership-period">/mo.</span>
+              </div>
+              <div class="membership-details">Unlimited gym access, free group classes, one weekly guest pass, priority bookings, exclusive discounts, events and so much more!</div>
+              
+              <div class="row pt-5">
+                <div class="col-6 d-flex align-items-center">
+                  <a class="learn-more-link">Learn more</a> 
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                  
+                <button class="classic-subscribe-button">Subscribe now</button>
+               </div> 
+               </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -255,9 +311,10 @@
 <!-- ScrollMagic GSAP plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
 
-</head>
-<body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
     <script src="js/scrollmagic.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/skills.js"></script>

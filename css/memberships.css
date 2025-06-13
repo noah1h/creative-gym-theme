@@ -19,6 +19,21 @@
   min-height: 200px;
   padding: 25px 35px;
 }
+.membership-classic,
+.membership-pro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  background-color: #1a1a1a; /* adjust to match your design */
+  border-radius: 12px;
+}
+
+.membership-details {
+  margin-bottom: auto; 
+}
+
 .membership-pro {
   background-image: linear-gradient(25deg, #121e8b, #193daa, #1a5ccb, #127bec)
 }
@@ -71,6 +86,8 @@
   color: var(--text-color);
   border-radius: 100px;
   font-size: 18px;
+  word-wrap: nowrap;
+  transition: all 0.3s ease;
 }
 .classic-subscribe-button {
   background-color: var(--text-color);
@@ -80,10 +97,30 @@
   color: var(--background-color);
   border-radius: 100px;
   font-size: 18px;
+  transition: all 0.3s ease;
+}
+.classic-subscribe-button:hover, .subscribe-button:hover {
+  transform: translateY(-2px);
+}
+.classic-subscribe-button:hover {
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.25);
+}
+.subscribe-button:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 @media(max-width:1024px) {
   .membership-pro, .membership-classic {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .memberships-title {
+    font-size: 46px;
+  }
+  .memberships-desc {
+    padding: 0 40px;
+    font-size: 16px;
   }
 }

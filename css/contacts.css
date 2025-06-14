@@ -1,6 +1,6 @@
 #contacts {
   height: fit-content;
-  margin-top: 50px;
+  margin-top: 100px;
   background-color: var(--background-color);
 }
 
@@ -107,5 +107,8 @@
 .contact-form-section {
   min-height: 83%;
   width: 100%;
+}
+.contact-info {
+  padding-bottom: 120px;
 }
 }

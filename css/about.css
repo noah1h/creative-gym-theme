@@ -9,6 +9,9 @@
   text-align: center;
   font-weight: 800;
 }
+.about-desc {
+  color: var(--desc-color);
+}
 .about-img {
   background-image: url("../imgs/gym-image.jpeg");
   background-size: cover;

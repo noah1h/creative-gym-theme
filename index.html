@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/nutrition.css" />
     <link rel="stylesheet" href="css/trainers.css" />
     <link rel="stylesheet" href="css/contacts.css" />
     <link rel="stylesheet" href="css/memberships.css" />
@@ -47,8 +48,9 @@
     <div class="sidebar d-lg-none d-md-block">
       <div class="sidebar-links">
         <a class="sidebar-link" href="about.html">About us</a>
+        <a class="sidebar-link" href="#nutrition">Nutrition Calculator</a>
         <a class="sidebar-link" href="#trainers">Our trainers</a>
-        <a class="nav-links" href="#contacts">Contact us</a>
+        <a class="sidebar-link" href="#contacts">Contact us</a>
         <a class="sidebar-link" href="#memberships">Memberships & Pricing</a>
         <a class="sidebar-button" href="#memberships">Join now</a>
       </div>
@@ -60,6 +62,7 @@
 
         <div class="nav-links-container d-none d-lg-flex">
           <a class="nav-links" href="about.html">About us</a>
+          <a class="nav-links" href="#nutrition">Nutrition Calculator</a>
           <a class="nav-links" href="#trainers">Our trainers</a>
           <a class="nav-links" href="#contacts">Contact us</a>
           <a class="nav-links" href="#memberships">Memberships & Pricing</a>
@@ -150,7 +153,7 @@
           <div class="col-lg-7 col-md-12 pt-5 px-5">
             <p data-aos="fade-left" class="about-desc">
               At
-              <span class="logo-text">Max<span class="logo-2">Fit</span></span
+              <span class="logo">Max<span class="logo-2">Fit</span></span
               >, we believe that fitness isn’t just about lifting weights or
               running on treadmills—it’s about creating a healthier, happier,
               and stronger you. Our mission is to empower our community through
@@ -207,7 +210,79 @@
         </div>
       </div>
     </section>
-
+    <section id="nutrition">
+      
+      <div class="container d-flex flex-column align-items-center">
+    <div class="nutrition-title">Nutrition Calculator</div>
+    <div class="nutrition-calc">
+    <div class="row g-3">
+      <div class="col-lg-8 col-md-12">
+        <div class="d-flex flex-row">
+        <input type="number" class="weight-input" placeholder="Weight">
+        <select class="weight-unit">
+          <option value="1">KG</option>
+          <option value="2">LB(Pound)</option>
+        </select>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+      <select class="gender-button nutrition-button">
+        <option value="1">Gender</option>
+        <option value="2">Male</option>
+        <option value="3">Female</option>
+      </select>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <select class="nutrition-button">
+          <option value="1">Activity</option>
+          <option value="2">Active (Athlete or Intense Training)</option>
+          <option value="3">Normal (Regular Gym 3-4x a Week)</option>
+          <option value="4">Not active (Sedentary Lifestyle)</option>
+        </select>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <select class="nutrition-button">
+          <option value="1">Goal</option>
+          <option value="2">Caloric Surplus(Gain weight)</option>
+          <option value="3">Caloris Balance(Maintain weight)</option>
+          <option value="4">Caloric Deficit(Lose weight)</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <div class="submit-button nutrition-button">Submit</div>
+      </div>
+    </div>
+    <table class="table nutrition-table mt-5">
+      <thead>
+        <tr>
+          <th>Nutrient</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fats</td>
+          <td>??</td>
+        </tr>
+        <tr>
+          <td>Calories</td>
+          <td>??</td>
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <td>??</td>
+        </tr>
+        <tr>
+          <td>Carbohydrates</td>
+          <td>??</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+  </div>
+  </div>
+    </section>
     <section id="trainers">
       <div class="container mt-5 d-flex justify-content-center align-items-center flex-column">
       <h1 data-aos="fade-right" class="trainers-title">Trainers of the month:</h1>
@@ -386,6 +461,7 @@
                 <li><a href="#trainers">Our Trainers</a></li>
                 <li><a href="#memberships">Memberships</a></li>
                 <li><a href="#contacts">Contact Us</a></li>
+                <li><a href="about.html#faq">FAQs</a></li>
               </ul>
             <h3 class="links-title pt-5">Contact Informations</h3>
               <ul class="list-unstyled">
@@ -439,6 +515,7 @@
     <script src="js/scrollmagic.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/skills.js"></script>
+    <script src="js/nutrition.js"></script>
     
   </body>
 </html>

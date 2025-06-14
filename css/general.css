@@ -35,7 +35,7 @@ html body {
 html a {
   text-decoration: none;
 }
-section, main, header {
+section, main, header, footer {
   overflow: hidden;
   overflow-x: hidden;
 }

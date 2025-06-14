@@ -1,14 +1,13 @@
 #contacts {
-  min-height: 90vh;
+  height: fit-content;
   margin-top: 50px;
   background-color: var(--background-color);
 }
 
 .contact-info,
 .contact-form-section {
-  height: 100%;
+  height: 83%;
   width: 100%;
-  padding-bottom: 50px;
 }
 .contact-info {
   z-index: 2;

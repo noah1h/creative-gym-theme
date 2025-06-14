@@ -6,7 +6,7 @@
   --background-color: #0B1215;
   --text-color: #fbfbff;
   --border-color: #334155;
-  --desc-color: #a2a2a2;
+  --desc-color: #b0b0b0;
 }
 
 
@@ -34,4 +34,20 @@ html a {
 }
 section {
   overflow: hidden;
+}
+
+.logo {
+  color: var(--text-color);
+  font-weight: 900;
+  font-family: 'Inter', sans-serif;
+}
+.logo-2 {
+  color: var(--secondary-color);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+nav a:hover {
+  color: var(--text-color);
+  cursor: pointer;
 }

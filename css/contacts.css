@@ -6,13 +6,14 @@
 
 .contact-info,
 .contact-form-section {
-  height: 83%;
+  min-height: 83%;
   width: 100%;
 }
 .contact-info {
   z-index: 2;
   background: var(--primary-color);
   padding-top: 50px;
+  padding-bottom: 50px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   position: relative;

@@ -86,3 +86,9 @@
   padding-bottom: 30px;
   text-align: center;
 }
+
+@media(max-width:760px) {
+  .trainers-title {
+    font-size: 35px;
+  }
+}

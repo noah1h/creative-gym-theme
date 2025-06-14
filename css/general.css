@@ -21,6 +21,9 @@ p {
   margin: 0;
   box-sizing: border-box;
 }
+img {
+  overflow: hidden;
+}
 html body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -32,8 +35,9 @@ html body {
 html a {
   text-decoration: none;
 }
-section {
+section, main, header {
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .logo {

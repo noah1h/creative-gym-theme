@@ -23,7 +23,7 @@
 }
 
 .banner-skills {
-  background-color: var(--primary-color);
+  background-image: var(--gradient);
   color: var(--text-color);
   transition: opacity 0.5s ease-in-out;
   padding: 2px 6px;

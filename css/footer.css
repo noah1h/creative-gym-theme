@@ -43,7 +43,7 @@
 
 #footer {
   background-color: black;
-  min-height: 90vh;
+  height: auto;
   padding-top: 30px;
   border-top: 1px solid #333;
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);

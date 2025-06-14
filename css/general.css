@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #007ea7;
-  --secondary-color: #00a7e1;
-  --accent-color: #003459;
+  --primary-color: #1a5ccb;
+  --secondary-color: #127bec;
+  --accent-color: #121e8b;
+  --gradient: linear-gradient(25deg, #121e8b, #193daa, #1a5ccb, #127bec);
   --background-color: #0B1215;
   --text-color: #fbfbff;
   --border-color: #334155;
@@ -13,7 +14,7 @@ h1, div {
   font-family: 'Inter', sans-serif;
 }
 p {
-  font-family: 'Asul', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 * {
   padding: 0;
@@ -25,6 +26,8 @@ html body {
   color: var(--text-color);
   max-width: 100%;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 html a {
   text-decoration: none;

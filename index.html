@@ -20,7 +20,9 @@
       href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -37,27 +39,29 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/trainers.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
     <link rel="stylesheet" href="css/memberships.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <div class="sidebar d-lg-none d-md-block">
       <div class="sidebar-links">
-        <a class="sidebar-link">About us</a>
-        <a class="sidebar-link">Our trainers</a>
-        <a class="sidebar-link">Memberships</a>
-        <a class="sidebar-button">Join now</a>
+        <a class="sidebar-link" href="#about">About us</a>
+        <a class="sidebar-link" href="#trainers">Our trainers</a>
+        <a class="sidebar-link" href="#memberships">Memberships & Pricing</a>
+        <a class="sidebar-button" href="#memberships">Join now</a>
       </div>
     </div>
 
-    <nav id="nav">
+    <nav data-aos="fade-down" data-aos-duration="600" id="nav">
       <div class="container-fluid nav-container">
         <div class="gym-logo">Max<span class="logo-2">Fit</span></div>
 
         <div class="nav-links-container d-none d-lg-flex">
-          <a class="nav-links" href="#">About us</a>
-          <a class="nav-links" href="#">Our trainers</a>
-          <a class="nav-links" href="#">Memberships</a>
-          <button class="nav-button">Join now</button>
+          <a class="nav-links" href="#about">About us</a>
+          <a class="nav-links" href="#trainers">Our trainers</a>
+          <a class="nav-links" href="#memberships">Memberships & Pricing</a>
+          <a class="nav-button" href="#memberships">Join now</a>
         </div>
 
         <svg
@@ -205,7 +209,7 @@
 
     <section id="trainers">
       <div class="container mt-5 d-flex justify-content-center align-items-center flex-column">
-      <h1 class="trainers-title">Our trainers:</h1>
+      <h1 data-aos="fade-right" class="trainers-title">Our trainers:</h1>
         <div class="row g-5 align-items-end">
 
           <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
@@ -214,7 +218,7 @@
                 <div class="trainer-name">Trainer name</div>
                 <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
               </div>
-              <img class="trainer-img" src="https://placehold.co/300x400" alt="">
+              <div class="trainer-img trainer-1"></div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
@@ -223,7 +227,7 @@
                 <div class="trainer-name">Trainer name</div>
                 <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
               </div>
-              <img class="trainer-img" src="https://placehold.co/300x400" alt="">
+              <div class="trainer-img trainer-2"> </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
@@ -232,7 +236,7 @@
                 <div class="trainer-name">Trainer name</div>
                 <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
               </div>
-              <img class="trainer-img" src="https://placehold.co/300x400" alt="">
+              <div class="trainer-img trainer-3"></div>
             </div>
           </div>
         </div>
@@ -241,15 +245,75 @@
       </div>
       
     </section>
+    <section id="contacts">
+      <div class="container-fluid p-0 m-0">
+        <div class="row g-0 min-vh-100 m-0">
+          <div class="col-lg-4 col-md-12 d-flex">
+            <div data-aos="fade-right" class="contact-info flex-fill">
+              <div class="contact-info-title">Contact Info</div>
+              <div class="contact-details">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="contact-details-svg">
+                  <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                  <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                </svg>
+                
+              
+                youremail@example.com</div>
+              <div class="contact-details">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="contact-details-svg">
+                  <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                </svg>
+                
+                012-345-789</div>
+              <div class="contact-details">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="contact-details-svg">
+                  <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                </svg>
+                
+                
+                Street 5, Cairo, Egypt</div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 d-flex">
+            <div data-aos="fade-left" data-aos-delay="100" class="contact-form-section flex-fill">
+              <div class="contact-form-title">Contact Form</div>
+              <form action="" class="contact-form">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <input type="text" class="first-name-input" placeholder="First Name">
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <input type="text" class="last-name-input" placeholder="Last name">
+                  </div>
+                  <div class="col-12">
+                <input type="text" class="subject-input" placeholder="Subject">
+                  </div>
+                  <div class="col-12">
+                    <input type="email" class="email-input" placeholder="Email">
+                  </div>
+                  <div class="col-12">
+                    <textarea name="" id="" placeholder="Your Message"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
+    
+    
+    
+
     <section id="memberships">
-      <h1 class="memberships-title">Memberships</h1>
-      <p class="memberships-desc">Whether you're just starting out or taking it to the next level, our Classic and Premium memberships give you everything you need to succeed.</p>
+      <h1 data-aos="fade-left" class="memberships-title">Memberships</h1>
+      <p data-aos="fade-right" data-aos-delay="100" class="memberships-desc">Whether you're just starting out or taking it to the next level, our Classic and Premium memberships give you everything you need to succeed.</p>
 
       <div class="container pt-3">
         <div class="row g-3">
           <div class="col-lg-6 col-sm-12 d-flex justify-content-end">
-            <div class="membership-pro d-flex flex-column justify-content-between h-100">
+            <div data-aos="fade-right" data-aos-delay="100" class="membership-pro d-flex flex-column justify-content-between h-100">
               <div class="d-flex flex-row">
               <div class="membership-card-title">PRO</div>
               <div class="best-value-container d-flex justify-content-end align-items-center">
@@ -268,14 +332,14 @@
                 </div>
                 <div class="col-6 d-flex align-items-center justify-content-end">
                   
-                <button class="subscribe-button">Subscribe now</button>
+                <button class="subscribe-button">Join now</button>
                </div> 
               </div>
               
             </div>
           </div>
           <div class="col-lg-6 col-sm-12 d-flex justify-content-start">
-            <div class="membership-classic d-flex flex-column justify-content-between h-100">
+            <div data-aos="fade-left" data-aos-delay="200" class="membership-classic d-flex flex-column justify-content-between h-100">
               <div class="membership-card-title">CLASSIC</div>
               <div class="starting-at-text">Starting at</div>
               <div class="classic-membership-price">
@@ -289,7 +353,7 @@
                 </div>
                 <div class="col-6 d-flex align-items-center justify-content-end">
                   
-                <button class="classic-subscribe-button">Subscribe now</button>
+                <button class="classic-subscribe-button">Join now</button>
                </div> 
                </div> 
             </div>
@@ -298,18 +362,42 @@
       </div>
     </section>
 
+    <footer id="footer">
+      <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 mb-4">
+                <h4>Company</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Trainers</a></li>
+                    <li><a href="#">Memberships</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h4>Services</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Personal Training</a></li>
+                    <li><a href="#">Group Classes</a></li>
+                    <li><a href="#">Nutrition Coaching</a></li>
+                    <li><a href="#">Equipment Tours</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div>&copy; 2025 MaxFit. All rights reserved.</div>
+        </div>
+    </div>
+    </footer>
     <!-- jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-<!-- GSAP (GreenSock Animation Platform) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-<!-- ScrollMagic -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-
-<!-- ScrollMagic GSAP plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+  
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

@@ -1,5 +1,6 @@
 #memberships {
   min-height: 100vh;
+  background-color: var(--background-color);
 }
 .memberships-title {
   padding-top: 80px;
@@ -35,7 +36,8 @@
 }
 
 .membership-pro {
-  background-image: linear-gradient(25deg, #121e8b, #193daa, #1a5ccb, #127bec)
+  background-image: var(--gradient);
+  box-shadow: 0 8px 20px rgba(26, 91, 203, 0.25);
 }
 .membership-classic {
   background-color: var(--background-color);
@@ -54,7 +56,8 @@
   color: var(--background-color);
   padding: 4px 8px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
+  border-radius: 5px;
 }
 .membership-price {
   color: #FFB823;
@@ -117,10 +120,19 @@
 
 @media (max-width: 767px) {
   .memberships-title {
-    font-size: 46px;
+    font-size: 42px;
   }
   .memberships-desc {
-    padding: 0 40px;
-    font-size: 16px;
+    padding: 0 20px;
+    font-size: 12px;
+  }
+  .learn-more-link, .subscribe-button, .classic-subscribe-button {
+    font-size: 14px;
+  }
+  .best-value-text {
+    font-size: 12px;
+  }
+  .membership-details {
+    font-size: 14px;
   }
 }

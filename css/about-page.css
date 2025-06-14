@@ -1,5 +1,5 @@
 #about {
-  min-height: 100vh;
+  height: fit-content;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -26,7 +26,7 @@
 #whyus {
   background: var(--background-color);
   padding-top: 50px;
-  min-height: 80vh;
+  height: fit-content;
 }
 .whyus-title {
   font-size: 48px;
@@ -104,7 +104,7 @@
   padding-top: 20px;
   background: var(--gradient);
   margin-top: 50px;
-  min-height: 350px;
+  height: fit-content;
   width: 100%;
   position: relative;
   z-index: 2;
@@ -195,9 +195,10 @@
 }
 
 #faq {
-  min-height: 100vh;
+  height: fit-content;
   background-color: var(--background-color);
   padding-top: 80px;
+  padding-bottom: 50px;
 }
 .faq-title {
   font-weight: 800;

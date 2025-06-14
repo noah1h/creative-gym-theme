@@ -47,6 +47,20 @@
   border-radius: 15px;
   border: none;
   text-align: center;
+  position: relative;
+}
+.nutrition-button:not(.submit-button)::after {
+  content: '>';
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  transform: rotate(90deg);
+  font-size: 20px;
+}
+.nutrition-button option{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-size: 18px;
 }
 .submit-button {
   background-color: #3E7B27;

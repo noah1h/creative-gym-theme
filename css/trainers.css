@@ -52,19 +52,22 @@
   height: 400px;
 }
 .trainer-1 {
-  background-image: url("https://placehold.co/300x400");
-  background-size: cover;
+  /*background-image: url("https://placehold.co/300x400");*/
+  background-image: url("../imgs/man.png");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .trainer-2 {
-  background-image: url("https://placehold.co/300x400");
+  /*background-image: url("https://placehold.co/300x400");*/
+  background-image: url("../imgs/man2.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .trainer-3 {
-  background-image: url("https://placehold.co/300x400");
+  /*background-image: url("https://placehold.co/300x400");*/
+  background-image: url("../imgs/man3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/nutrition.css" />
     <link rel="stylesheet" href="css/trainers.css" />
+    <link rel="stylesheet" href="css/announcements.css" />
     <link rel="stylesheet" href="css/contacts.css" />
     <link rel="stylesheet" href="css/memberships.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -48,10 +49,9 @@
     <div class="sidebar d-lg-none d-md-block">
       <div class="sidebar-links">
         <a class="sidebar-link" href="about.html">About us</a>
+        <a class="sidebar-link" href="announcements.html">Announcements</a>
         <a class="sidebar-link" href="#nutrition">Nutrition Calculator</a>
-        <a class="sidebar-link" href="#trainers">Our trainers</a>
         <a class="sidebar-link" href="#contacts">Contact us</a>
-        <a class="sidebar-link" href="#memberships">Memberships & Pricing</a>
         <a class="sidebar-button" href="#memberships">Join now</a>
       </div>
     </div>
@@ -62,10 +62,9 @@
 
         <div class="nav-links-container d-none d-lg-flex">
           <a class="nav-links" href="about.html">About us</a>
+          <a class="nav-links" href="announcements.html">Announcements</a>
           <a class="nav-links" href="#nutrition">Nutrition Calculator</a>
-          <a class="nav-links" href="#trainers">Our trainers</a>
           <a class="nav-links" href="#contacts">Contact us</a>
-          <a class="nav-links" href="#memberships">Memberships & Pricing</a>
           <a class="nav-button" href="#memberships">Join now</a>
         </div>
 
@@ -210,11 +209,80 @@
         </div>
       </div>
     </section>
+
+    <section id="trainers">
+      <div class="container mt-5 d-flex justify-content-center align-items-center flex-column">
+      <h1 data-aos="fade-right" class="trainers-title">Trainers of the month:</h1>
+        <div class="row g-5 align-items-end">
+
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div data-aos="fade-up" data-aos-duration="800" class="trainer">
+              <div class="trainer-overlay">
+                <div class="trainer-name">Trainer name</div>
+                <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
+              </div>
+              <div class="trainer-img trainer-1"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" class="trainer">
+              <div class="trainer-overlay">
+                <div class="trainer-name">Trainer name</div>
+                <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
+              </div>
+              <div class="trainer-img trainer-2"> </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" class="trainer">
+              <div class="trainer-overlay">
+                <div class="trainer-name">Trainer name</div>
+                <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
+              </div>
+              <div class="trainer-img trainer-3"></div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+    </section>
+
+    <section id="announcements">
+      <div class="container">
+        <div data-aos="fade-left" class="announcements-title">Latest Announcements</div>
+        <div data-aos="fade-right" data-aos-delay="100" class="announcement-card mt-4">
+          <span class="tag new-offer">New Offer</span>
+          <h3>Get Fit This Summer – 30% Off!</h3>
+          <p>We’re launching a summer discount on all gym memberships. Available till July 30.</p>
+          <span class="date">June 15, 2025</span>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="200" class="announcement-card mt-4">
+          <span class="tag news">Gym Update</span>
+          <h3>Welcome Coach Maya – Our New Strength Expert</h3>
+          <p>We’re excited to introduce Coach Maya, a certified strength and conditioning coach with over 8 years of experience. Book a free intro session with her this week!</p>
+          <span class="date">June 10, 2025</span>
+        </div>
+        
+        <div data-aos="fade-right" data-aos-delay="300" class="announcement-card mt-4">
+          <span class="tag schedule">Schedule Update</span>
+          <h3>New Group Class Times Starting Monday</h3>
+          <p>We’ve updated our class schedule to better fit your day. Evening HIIT now starts at 6:00 PM, and morning yoga moves to 7:30 AM. View full schedule on the Classes page.</p>
+          <span class="date">June 8, 2025</span>
+        </div>
+        
+        <div class="d-flex justify-content-center align-items-center">
+        <a data-aos="fade-up" href="announcements.html"><button class="view-all mt-4"><span class="btn-text">View all</span></button></a>
+        </div>
+      </div>
+    </section>
+
     <section id="nutrition">
       
       <div class="container d-flex flex-column align-items-center">
-    <div class="nutrition-title">Nutrition Calculator</div>
-    <div class="nutrition-calc">
+    <div data-aos="fade-left" class="nutrition-title">Nutrition Calculator</div>
+    <div data-aos="fade-right" data-aos-delay="100" class="nutrition-calc">
     <div class="row g-3">
       <div class="col-lg-8 col-md-12">
         <div class="d-flex flex-row">
@@ -282,44 +350,6 @@
     
   </div>
   </div>
-    </section>
-    <section id="trainers">
-      <div class="container mt-5 d-flex justify-content-center align-items-center flex-column">
-      <h1 data-aos="fade-right" class="trainers-title">Trainers of the month:</h1>
-        <div class="row g-5 align-items-end">
-
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div data-aos="fade-up" data-aos-duration="800" class="trainer">
-              <div class="trainer-overlay">
-                <div class="trainer-name">Trainer name</div>
-                <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
-              </div>
-              <div class="trainer-img trainer-1"></div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" class="trainer">
-              <div class="trainer-overlay">
-                <div class="trainer-name">Trainer name</div>
-                <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
-              </div>
-              <div class="trainer-img trainer-2"> </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" class="trainer">
-              <div class="trainer-overlay">
-                <div class="trainer-name">Trainer name</div>
-                <p class="trainer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga?</p>
-              </div>
-              <div class="trainer-img trainer-3"></div>
-            </div>
-          </div>
-        </div>
-        
-        
-      </div>
-      
     </section>
     <section id="contacts">
       <div class="container-fluid p-0 m-0">
@@ -458,7 +488,7 @@
             <h3 class="links-title">Quick Links</h3>
               <ul class="list-unstyled">
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#trainers">Our Trainers</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
                 <li><a href="#memberships">Memberships</a></li>
                 <li><a href="#contacts">Contact Us</a></li>
                 <li><a href="about.html#faq">FAQs</a></li>

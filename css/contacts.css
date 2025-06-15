@@ -79,6 +79,7 @@
   height: 130px;
 }
 .form-submit {
+  border: none;
   background-color: #3E7B27;
   color: white;
   padding: 10px 20px;

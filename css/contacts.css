@@ -87,6 +87,7 @@
   width: 100%;
   border-radius: 20px;
 }
+
 .contact-form input::placeholder, .contact-form textarea::placeholder {
   transition: all 0.3s ease;
 }
@@ -97,6 +98,23 @@
 .contact-form input:focus::placeholder, .contact-form textarea:focus::placeholder {
     color: var(--secondary-color);
 }
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+.form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-spinner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
 
 @media (min-width: 1600px) {
   .contact-info::after {

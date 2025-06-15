@@ -1,6 +1,6 @@
 
   const skills = [
-    "Strength & Conditioning",
+    "Strength Training",
     "Expert Coaching",
     "Tailored Programs"
   ];

@@ -33,11 +33,14 @@
     <!--End-->
     <!--AOS.js-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--TinySlider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <!--Css files-->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/timetable.css" />
     <link rel="stylesheet" href="css/nutrition.css" />
     <link rel="stylesheet" href="css/trainers.css" />
     <link rel="stylesheet" href="css/announcements.css" />
@@ -50,6 +53,7 @@
       <div class="sidebar-links">
         <a class="sidebar-link" href="about.html">About us</a>
         <a class="sidebar-link" href="announcements.html">Announcements</a>
+        <a class="sidebar-link" href="gallery.html">Gallery</a>
         <a class="sidebar-link" href="#nutrition">Nutrition Calculator</a>
         <a class="sidebar-link" href="#contacts">Contact us</a>
         <a class="sidebar-button" href="#memberships">Join now</a>
@@ -63,6 +67,7 @@
         <div class="nav-links-container d-none d-lg-flex">
           <a class="nav-links" href="about.html">About us</a>
           <a class="nav-links" href="announcements.html">Announcements</a>
+          <a class="nav-links" href="gallery.html">Gallery</a>
           <a class="nav-links" href="#nutrition">Nutrition Calculator</a>
           <a class="nav-links" href="#contacts">Contact us</a>
           <a class="nav-button" href="#memberships">Join now</a>
@@ -278,6 +283,61 @@
       </div>
     </section>
 
+    <section id="timetable">
+      <div class="container">
+        <div data-aos="fade-right" class="timetable-title pb-5">Classes Timetable</div>
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+            <img data-aos="fade-right" data-aos-delay="100" src="imgs/classes-img(cropped).jpg" title="Image by Freepik on Freepik" class="timetable-img" alt="">
+          </div>
+          <div class="col-lg-8 col-md-12">
+            <div data-aos="fade-left" data-aos-delay="100" class="classes-table">
+              <div class="container mt-5">
+                <h3 class="mb-4">Upcoming Gym Classes</h3>
+                <table class="table table-hover table-borderless gym-schedule">
+                  <thead>
+                    <tr>
+                      <th>Class</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th></th> 
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>HIIT Blast</td>
+                      <td>June 18, 2025</td>
+                      <td>6:00 PM – 7:00 PM</td>
+                      <td><a href="#" class="btn btn-primary btn-sm join-btn"><span class="join-text">Join Now</span></a></td>
+                    </tr>
+                    <tr>
+                      <td>Strength Circuit</td>
+                      <td>June 19, 2025</td>
+                      <td>5:30 PM – 6:30 PM</td>
+                      <td><a href="#" class="btn btn-primary btn-sm join-btn"><span class="join-text">Join Now</span></a></td>
+                    </tr>
+                    <tr>
+                      <td>Yoga Flow</td>
+                      <td>June 20, 2025</td>
+                      <td>8:00 AM – 9:00 AM</td>
+                      <td><a href="#" class="btn btn-primary btn-sm join-btn"><span class="join-text">Join Now</span></a></td>
+                    </tr>
+                    <tr>
+                      <td>BoxFit</td>
+                      <td>June 21, 2025</td>
+                      <td>7:00 PM – 8:00 PM</td>
+                      <td><a href="#" class="btn btn-primary btn-sm join-btn"><span class="join-text">Join Now</span></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section id="nutrition">
       
       <div class="container d-flex flex-column align-items-center">
@@ -400,6 +460,9 @@
                   <div class="col-12">
                     <textarea name="" id="" placeholder="Your Message"></textarea>
                   </div>
+                  <div class="col-12">
+                    <button type="submit" class="form-submit">Submit</button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -489,6 +552,7 @@
               <ul class="list-unstyled">
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#memberships">Memberships</a></li>
                 <li><a href="#contacts">Contact Us</a></li>
                 <li><a href="about.html#faq">FAQs</a></li>
@@ -531,18 +595,19 @@
     <!-- jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
+    
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
   
+<script src="owl/owl.carousel.min.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-    <script src="js/scrollmagic.js"></script>
+    <script src="js/owl.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/skills.js"></script>
     <script src="js/nutrition.js"></script>

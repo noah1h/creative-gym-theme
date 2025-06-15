@@ -76,7 +76,15 @@
 }
 .contact-form textarea {
   resize: none;
-  height: 200px;
+  height: 130px;
+}
+.form-submit {
+  background-color: #3E7B27;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 20px;
 }
 .contact-form input::placeholder, .contact-form textarea::placeholder {
   transition: all 0.3s ease;
